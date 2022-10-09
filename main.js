@@ -47,7 +47,7 @@ client.on('message', async message => {
         // client.sendMessage("919538474018@c.us",productsList)
    message.getContact().then((result) => {
        
-       if(result.number=="919341269808" || result.number=="919538474018"){
+       if(result.number=="919341269808" || result.number=="919538474018" || result.number=="918073560639" ){
     //    if(true){
         if(message.hasMedia) {
            message.downloadMedia().then((res)=>{
@@ -68,7 +68,9 @@ client.on('message', async message => {
                         client.sendMessage(`91${i.contact}@c.us`,media,{caption:message.body}).then((rep)=>{
                             console.log(2)
                         })
+			    
                     }
+		 client.sendMessage(message.from,"Sent successfully 😊");
 
                   console.log(response.data);
                 }).catch(function (error) {
@@ -88,13 +90,14 @@ client.on('message', async message => {
             // for(let i=0;i<50;i++){
                 // client.sendButtons("919538474018@c.us",'Body text/ MessageMedia instance', [{id:'customId',body:'button1'}], 'Title here, doesn\'t work with media', 'Footer here'), {caption: 'if you used a MessageMedia instance, use the caption here'}
                 // client.sendMessage("919538474018@c.us", bbut)
-                client.sendMessage("919538474018@c.us","hi");
+               client.sendMessage(message.from,`HELLO ${message.notifyName} send me the document/Image to be shared`);
             // }
         }
     }
     
     else{
-        client.sendMessage(message.from,`hi ${message.notifyName}` );
+//         client.sendMessage(message.from,`hi ${message.notifyName}` );
+	        client.sendMessage(message.from,`HELLO  ${message.notifyName} from INDO KISAAN 🌿` );
     }
    }).catch((err) => {
     
