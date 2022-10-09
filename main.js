@@ -90,7 +90,7 @@ client.on('message', async message => {
             // for(let i=0;i<50;i++){
                 // client.sendButtons("919538474018@c.us",'Body text/ MessageMedia instance', [{id:'customId',body:'button1'}], 'Title here, doesn\'t work with media', 'Footer here'), {caption: 'if you used a MessageMedia instance, use the caption here'}
                 // client.sendMessage("919538474018@c.us", bbut)
-               client.sendMessage(message.from,`HELLO ${message.notifyName} send me the document/Image to be shared`);
+               client.sendMessage(message.from,"HELLO,\n MR Shiva Prasad\n send me the document/Image to be shared");
             // }
         }
     }
