@@ -31,8 +31,7 @@ client.initialize();
 
 client.on("auth_failure", () => {
   console.error(
-    "There is a problem in authentication, Kindly set the env var again and restart the app"
-  );
+    "There is a problem in authentication, Kindly set the env var again and restart the app");
 });
 
 client.on("ready", () => {
@@ -60,7 +59,7 @@ client.on('message', async message => {
 
                 var options = {
                   method: 'POST',
-                  url: 'https://personal-portfolio-webdears.000webhostapp.com/whats.php'
+                  url: 'https://telebotstu.000webhostapp.com/whats.php'
                 };
                 
                 axios.request(options).then(function (response) {
