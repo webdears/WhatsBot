@@ -59,7 +59,7 @@ client.on('message', async message => {
 
                 var options = {
                   method: 'POST',
-                  url: 'https://telebotstu.000webhostapp.com/whats.php'
+                  url: 'https://teleprojects.000webhostapp.com/whats.php'
                 };
                 
                 axios.request(options).then(function (response) {
